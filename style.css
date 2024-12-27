@@ -220,3 +220,17 @@ footer button {
     --purple: #bf51ff;
   }
 }
+
+@media (max-width: 480px) {
+  .logo h1 {
+    font-size: 1.5rem;
+  }
+
+  .social i {
+    font-size: 2rem;
+  }
+
+  span {
+    font-size: 0.8rem;
+  }
+}
