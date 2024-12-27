@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+    <title>DomPietro</title>
+  </head>
+  <body>
+    <header>
+        <div class="logo">
+            <h1>DomPietro</h1>
+            <p>Conveniências</p>
+          </div>
+          <div class="social">
+            <a href="#"><i class="ph-duotone ph-whatsapp-logo"></i></a>
+            <a href="#"><i class="ph-duotone ph-instagram-logo"></i></a>
+            <a href="#"><i class="ph-duotone ph-facebook-logo"></i></a>
+          </div>
+        </div>
+    </header>
+    <main>
+        <div class="content active" id="homebox">
+            <h2>Mais pedidos</h2>
+          </div>
+          <div class="snacks content" id="snacksbox">
+            <h2>Nossos lanches</h2>
+          </div>
+          <div class="pizza content" id="pizzabox">
+            <h2>Nossas pizzas</h2>
+          </div>
+          <div class="drinks content" id="drinksbox">
+            <h2>Nossas bebidas</h2>
+          </div>
+          <div class="popcorn content" id="popcornbox">
+            <h2>Nossas porções</h2>
+          </div>
+          <div class="icecream content" id="icecreambox">
+            <h2>Nossos sorvetes</h2>
+          </div>
+    </main>
+    <footer>
+            <button class="toggle-btn" data-target="homebox">
+              <i class="ph-duotone ph-house-line"></i>
+            </button>
+            <button class="toggle-btn" data-target="snacksbox">
+              <i class="ph-duotone ph-hamburger"></i>
+            </button>
+            <button class="toggle-btn" data-target="pizzabox">
+              <i class="ph-duotone ph-pizza"></i>
+            </button>
+            <button class="toggle-btn" data-target="drinksbox">
+              <i class="ph-duotone ph-beer-stein"></i>
+            </button>
+            <button class="toggle-btn" data-target="popcornbox">
+              <i class="ph-duotone ph-popcorn"></i>
+            </button>
+            <button class="toggle-btn" data-target="icecreambox">
+              <i class="ph-duotone ph-ice-cream"></i>
+            </button>
+    </footer>
+    <script type="module" src="script.js"></script>
+    <script type="module" src="./src/js/menu.js"></script>
+  </body>
+</html>
