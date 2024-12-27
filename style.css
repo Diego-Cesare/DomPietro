@@ -115,6 +115,7 @@ main {
 
 span {
   color: var(--fg);
+  font-weight: bold;
   font-size: 1rem;
 }
 
@@ -124,13 +125,11 @@ span {
 
 .menu-price {
   color: var(--purple);
-  font-weight: bold;
   border-radius: 10px;
 }
 
 .menu-size {
   color: var(--green);
-  font-weight: bold;
 }
 
 /* Estilo do modal */
