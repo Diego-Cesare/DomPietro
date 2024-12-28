@@ -22,7 +22,7 @@ export const homeItems = [
 
   { name: "Pizza Calabresa", size: "M", price: "R$60,90" },
   { name: "Pizza 4 queijos", size: "M", price: "R$65,90" },
-  { name: "Pizza Frango com catupiry", size: "M", price: "R$60,90" },
+  { name: "Pizza Frango/catupiry", size: "M", price: "R$60,90" },
 
   { name: "Antartica original", size: "600ml", price: "R$7,90" },
   { name: "Antartica original", size: "1L", price: "R$14,00" },
