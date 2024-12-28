@@ -1,12 +1,9 @@
 // Seleciona todos os botões e as divs de conteúdo
 const buttons = document.querySelectorAll(".toggle-btn");
 const contents = document.querySelectorAll(".content");
+const homebox = document.getElementById("homebox");
 
 contents.forEach((content) => content.classList.remove("active"));
-
-setTimeout(() => {
-  document.getElementById("homebox").classList.add("active");
-}, 2000);
 
 // Função para atualizar o destaque do botão
 function updateButtonHighlight(activeBoxId) {
@@ -19,6 +16,13 @@ function updateButtonHighlight(activeBoxId) {
     }
   });
 }
+
+setTimeout(() => {
+  document.getElementById("homebox").classList.add("active");
+  setTimeout(() => {
+    homebox.style.transform = "scale(1)";
+  }, 500);
+}, 50);
 
 // Adiciona o evento de clique a cada botão
 buttons.forEach((button) => {
@@ -35,6 +39,11 @@ buttons.forEach((button) => {
     // Adiciona a classe 'active' à div alvo
     if (targetDiv) {
       targetDiv.classList.add("active");
+      targetDiv.style.transform = "translateX(500px)";
+
+      setTimeout(() => {
+        targetDiv.style.transform = "translateX(0)";
+      }, 500);
       updateButtonHighlight(targetId); // Atualiza o destaque do botão
     }
   });
